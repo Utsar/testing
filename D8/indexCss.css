@@ -1,0 +1,51 @@
+.class-h1{
+    background-color: aqua;
+    font-size: large 50px;
+    border: black 50px;
+    border-style: groove;
+
+}
+
+
+.first-button-class{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: groove;
+  }
+
+  .second-button-class{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: groove;
+  }
+
+  .third-button-class{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-style: groove;
+  }
+
+  .first-input-class{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
