@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <style>
-        
+        .background-color{
+            background-color: aqua;
+        }
     </style>
     <title>Excercise 1</title>
 </head>
@@ -14,7 +16,7 @@
     <h1>Excercise 2</h1>
     <div>
         <ol>
-            <li>Excercise 3</li>
+            <li> <a href="http://www.google.com"><img id="image" src="https://via.placeholder.com/25"></a></li>
             <li>Excercise 3</li>
             <li>Excercise 3</li>
         </ol>
@@ -58,6 +60,12 @@
             </tr>    
               
         </table>
+    </div>
+    <div>
+        <button onclick="buttonToHide()" id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3">Button 3</button>
+        <button id="button4">Button 4</button>
     </div>
     <div>
         <p>Excercise 9</p>
@@ -132,10 +140,10 @@ addClass()
 // 37) Write a function to add a red background to every link in the page
 
 const paintBackground = function(){
-    const links = document.querySelectorAll("td a")
-    links.forEach((a)=>{
-        a.classList.add("background")
-    })
+    const links = document.querySelectorAll("a")
+    for(let linkback of links){
+        linkback.style.color = ".background"
+    }
 }
 paintBackground()
 
@@ -164,6 +172,36 @@ const emptyList = function(){
     }
 }
 emptyList()
+
+// EXTRA
+
+
+// 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+
+// 42) Add a button to hide every image on the page
+
+const buttonToHide = function(){
+    getButton = document.querySelector("#button1")
+    getImage = document.querySelector("#image")
+}
+
+// 43) Add a button to hide and show the table from the page
+
+
+// 44) Write a function to sum every number inside the TD (if the content is numeric)
+
+
+// 45) Delete the last letter from the title each time the user clicks on it
+
+// 46) Change a single TD background color when the user clicks on it
+
+// 47) Add a button DELETE, on click it should delete a random TD from the page
+
+// 48) Add a pink border to a cell when the mouse is over it
+
+// 49) Write a function to add a table with 4 rows and 3 columns programmatically
+
+// 50) Write a function to remove the table from the page
 
     </script>
 </body>
