@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Homework D12</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link rel="stylesheet" href="style.css">
+       <style>
+        /* EXERCISE 1
+            For all Albums we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+         */
+        .album-container{
+
+         }
+        .album-cover{
+
+        }
+        .album-title{
+
+        }
+        .album-title{
+
+        }
+        .album-group{
+
+        }
+        .album-genre{
+
+        }
+        .album-duration{
+
+        }
+        .container-fluid{
+            background-color: dimgrey;
+        }
+        .album-container{
+            background-color: grey;
+            padding: 15px;
+            margin: 15px;
+        }
+        .hallOfFame{
+            background-color: hotpink;
+            padding: 20px;
+        }
+         
+       </style>
+  </head>
+  <body>
+      <!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<!-- EXERCISE 2 
+    Implement a navigation bar using the bootstrap componen
+    This navigation bar must link every section in your page
+-->
+<div class="container-fluid">
+    <!-- EXERCISE 3
+    Create a responsive section for your favourite albums.
+    In this section you should have:
+    - 4 albums per row when the screen is very large
+    - 3 albums per row when you are on a tablet (or a smaller viewport)
+    - 2 albums per row when you are on a small screen
+-->
+    <div class="album-container" class="container">
+        <div class="row">
+            <div class="album-covers" onclick="clickME()" class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                    
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+            <div class="col-12 col-lg-3 col-md-4 col-sm-6 mt-3">
+                <img class="img-fluid" src="Cypress_Hill-Black_Sunday.jpg" alt="first-album">
+                <div>
+                    <!-- EXERCISE 4
+    Create a section for the album reviews.
+    Pick one of your fav albums, and create a section with:
+        - Cover
+        - Title
+        - Band
+        - Duration
+        - Genre
+        - Tracklist
+        - ... And whatever you think it's interesting about it!
+-->
+                    <p>This should contain Cover</p>
+                    <p>This should contain Title</p>
+                    <p>This should contain Band</p>
+                </div> 
+            </div>
+        </div>
+        
+    
+    </div>
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+    <div  class="hallOfFame" class="container">
+        <div class="col-12">
+            <h1 class="hallofFame-heading">Here are the worst albums</h1>
+            <div>
+                <ul>
+                    <li>I dont like this</li>
+                    <li>I dont like either</li>
+                    <li>I never liked this</li>
+                    <li>I wouldn't like this</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- EXERCISE 6
+            Do you have any musician / band you admire or you are a fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+    <div class="favouriteMusician" class="container">
+        <div class="col-12">
+            <h2 class="favouriteMusician-heading">My favourite musician is...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis accusantium debitis pariatur, excepturi ipsum illo quae laborum quis aperiam, accusamus quo assumenda nulla? Minima neque officia recusandae itaque vel iure?</p>
+        </div>
+    </div>
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+    <footer class="footer">This is footer
+        
+    </footer>
+    
+</div>
+
+
+
+
+<!-- EXTRA:
+            EXERCISE 9
+            Create an album details area that is going to be toggled on and off by clicking on the album image
+        -->
+<!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+<!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
+        -->
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        const clickME = function(){
+            const divs = document.querySelectorAll("album-covers")
+            for(let albums of divs){
+                console.log("hello")
+            }
+        }
+    </script>
+  </body>
+</html>

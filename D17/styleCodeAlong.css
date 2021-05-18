@@ -1,0 +1,28 @@
+/* 
+* applies to all
+.class selects class
+#id selects ID
+attribute selector
+
+input[type]
+[alt="grouppicture"]
+[alt~="strive] 
+
+grouping with coma
+input, img
+
+combine
+#text .bold
+a#text li.bold
+
+child combinator
+div p
+div>p - direct child
+
+sibling operator
+#someid~li targets siblings on the same level
+*/
+/* 
+Pseudo
+
+*/

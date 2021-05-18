@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+  />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Bingo Board</h1>
+
+    <div id="board">
+
+      <!-- Bingo board will be here -->
+
+    </div>
+
+    <!-- <h1></h1> -->
+    
+    <div id="button">
+        <button onclick="generateRandomNumber()" id="first-button" class="highlight">Generate random number</button>
+        <button id="second-button" class="selected">Generate random number</button>
+        <button id="first-button">Generate random number</button>
+      <!-- buttons -->
+
+    </div>
+
+    <script>
+        // creating a board of 76 unique numbers
+        let bingoNumbers = 76
+        
+        let bingoBoard = document.getElementById(`board`)
+
+        const firstBingoBoard = function (){
+            for (let i = 0; i < bingoNumbers; i++){
+                // let's create a sperate div
+                let cell = document.createElement(`div`)
+                // Our cell is <div class="day"></div>
+                cell.classList.add(`number`)
+                // day is <h3> </h3>
+                let number = document.createElement(`h4`)
+                number.innerText = i + 1
+                // insert the h3 into the div
+                cell.appendChild(number)
+                // cell is in memory nut
+                bingoBoard.appendChild(cell)
+        }
+    }
+    firstBingoBoard()
+
+        //  create functionality for first button: Generate random number
+
+    const generateRandomNumber = function(){
+        let randomNumber = Math.floor(Math.random()*76+1)
+            if(randomNumber === number){
+        
+            }
+         }
+   
+
+
+
+
+
+          </script>
+</body>
+</html>

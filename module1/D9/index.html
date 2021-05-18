@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <title>Calendar</title>
+
+    <link
+
+      rel="stylesheet"
+
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <style></style>
+
+  </head>
+
+  <body>
+
+    <h1>Calendar</h1>
+
+    <div id="calendar">
+
+      <!-- day cells will be inserted here -->
+
+    </div>
+
+    <h1>Add Events</h1>
+
+    <!-- add event form sections -->
+
+    <div id="addMeeting">
+
+      <div>
+
+        <h4>Meeting Day</h4>
+
+        <h4 id="meeting-day">Click on a Day</h4>
+
+      </div>
+
+      <div>
+
+        <h4>Meeting Time</h4>
+
+        <input type="time" id="meeting-time" />
+
+      </div>
+
+      <div>
+
+        <h4>Meeting Name</h4>
+
+        <input
+
+          type="text"
+
+          id="meeting-name"
+
+          placeholder="Insert a name for the meeting"
+
+        />
+
+      </div>
+
+      <div>
+
+        <h4>Add</h4>
+
+        <button onclick="saveMeeting()">Save Meeting</button>
+
+      </div>
+
+    </div>
+
+    <div id="appointments">
+
+      <h1>Appointments for the day!</h1>
+
+      <ul id="appointment-list"></ul>
+
+    </div>
+    <script>
+        // create a list to store appointment
+        let appointments = []
+
+
+
+        // we need to clculate days in current month
+        // so we can create appropriate number of cells
+
+        const daysInThisMonth = function () {
+            let now = new Date()
+            // to calculate which is the last day of the month, we need to jump to the first day of the next month and substract One day
+            let lastDateOfTheMonth = new Date(now.getFullYear(), now.getMonth()+1, 0)
+
+            let numberOfDays = lastDateOfTheMonth.getDate()
+
+            return numberOfDays
+        }
+
+        window.onload = function () {
+            let numberOfDays = daysInThisMonth()
+        
+        // let's grab a referece to the calendar section in the page
+        let calendar = document.getElementById(`calendar`)
+        // let create 3o cells in aprill
+        for (let i = 0; i < numberOfDays; i++){
+            // let's create a sperate div
+            let cell = document.createElement(`div`)
+            // Our cell is <div class="day"></div>
+            cell.classList.add(`day`)
+            // day is <h3> </h3>
+            let day = document.createElement(`h3`)
+            day.innerText = i + 1
+            // insert the h3 into the div
+            cell.appendChild(day)
+            // cell is in memory nut
+            calendar.appendChild(cell)
+            // create a list for each day and push it to main list
+            appointments[i] = []
+            // add event listener to cell
+            cell.onclick = function (event) {
+                // search for any element alrady containing the selected class
+                let alreadySelectedelements = document.querySelector(`.selected`);
+                // event.currentTarget.classList.add(`selected`)
+                if (alreadySelectedelements){
+                    // if there are already selcted elements in the page lets remove them
+                    alreadySelectedelements.classlist.remove(`selected`)
+                    }
+
+                    // so now the slate will be clean everytime
+                    
+                event.currentTarget.classlist.add(`selected`)
+
+                let clickOnADayh4 = document.getelemenetbyid(`meeting-day`)
+                clickOnADayh4.innerText = i +1
+
+
+                }
+                                
+            }
+
+
+            const saveMeeting = function(){
+                let meetingDay = document.getElementById('')
+            }
+        }
+        
+    </script>
+
+  </body>
+
+</html>
+
+

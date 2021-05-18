@@ -1,0 +1,19 @@
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    background-color: cadetblue;
+    margin-top: 20px;
+}
+.col{
+    height: 50px;
+    background-color: cornflowerblue;
+}
+#memberList{
+    border: cyan solid;
+
+}
+#teamList{
+    border: darkkhaki solid;
+
+}

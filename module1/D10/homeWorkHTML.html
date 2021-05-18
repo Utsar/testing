@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .background-color{
+            background-color: aqua;
+        }
+    </style>
+    <title>Excercise 1</title>
+</head>
+<body>
+    <h1>Excercise 2</h1>
+    <div>
+        <ol>
+            <li> <a href="http://www.google.com"><img id="image" src="https://via.placeholder.com/25"></a></li>
+            <li>Excercise 3</li>
+            <li>Excercise 3</li>
+        </ol>
+    </div>
+    <hr>
+    <div id="container">
+        <table>
+            <tr>
+                <th>Excercise 4</th>
+                <th>Excercise 4</th>
+                <th>Excercise 4</th>
+                <th>Excercise 4</th>
+                <th>Excercise 4</th>
+            </tr> 
+            <tr>
+                <td>Excercise 4</td>
+                <td> <a href="https://google.com"><img src="https://via.placeholder.com/25" alt="Excercise 4"></a></td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+            </tr>
+            <tr>
+                <td>Excercise 4</td>
+                <td> <a href="https://google.com"><img src="https://via.placeholder.com/25" alt="Excercise 4"></a></td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+            </tr>
+            <tr>
+                <td>Excercise 4</td>
+                <td> <a href="https://google.com"><img src="https://via.placeholder.com/25" alt="Excercise 4"></a></td>
+                <td colspan="2">Excercise 4</td>
+                <td>Excercise 4</td>
+            </tr>
+            <tr>
+                <td>Excercise 4</td>
+                <td> <a href="https://google.com"><img src="https://via.placeholder.com/25" alt="Excercise 4"></a></td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+                <td>Excercise 4</td>
+            </tr>    
+              
+        </table>
+    </div>
+    <div>
+        <button onclick="buttonToHide()" id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3">Button 3</button>
+        <button id="button4">Button 4</button>
+    </div>
+    <div>
+        <p>Excercise 9</p>
+        <ul>
+            <li>Excercise 9</li>
+            <li>Excercise 9</li>
+            <li>Excercise 9</li>
+        </ul>
+       
+    </div>
+    <footer>
+        <p>My Name is Kristian</p>
+        <p>I built this website</p>
+        <p>I need a coffee</p>
+        
+    </footer>
+    <script>
+//  31) Get element with ID "container" from the page
+
+const getElement = function(){
+    let element = document.getElementById("container")
+    console.log(element)
+}
+getElement()
+
+// 32) Get every "td" from the page
+
+const getEveryTd = function(){
+    let tDs = document.querySelectorAll("td")
+       for (let everyTd of tDs){
+           console.log(everyTd)
+       }}
+getEveryTd()
+
+// 33) Create a cycle that prints the text inside every td of the page
+
+const printInsideEveryTd = function(){
+       const allTDs =  document.querySelectorAll("td")
+       for (let node of allTDs){
+           node.innerHTML = "Changed Text"
+       }
+}
+printInsideEveryTd()
+
+// 34) Write a function to change the heading of the page
+
+const changeHeading = function(){
+    const getHeadings = document.querySelector("h1").innerHTML = ("Changed Heading")
+
+}
+changeHeading()
+
+// 35) Write a function to add an extra row to the table
+
+const extraRow = function(content){
+    const row = document.querySelector("table")
+    row.innerHTML += `<td>${content}</td>`
+}
+
+extraRow("new row")
+
+// 36) Write a function to add the class "test" to each row in the table
+
+const addClass = function(){
+    const addClass = document.querySelectorAll("td")
+    for(let classes of addClass){
+        classes.classList.add("test")
+    }
+}
+addClass()
+
+// 37) Write a function to add a red background to every link in the page
+
+const paintBackground = function(){
+    const links = document.querySelectorAll("a")
+    for(let linkback of links){
+        linkback.style.color = ".background"
+    }
+}
+paintBackground()
+
+// 38) Console log "Page loaded" when the page is correctly loaded
+
+window.onload = function(){
+    console.log("Page loaded")
+}
+// 39) Write a function to add new items to a UL
+
+const newUlItems = function(content1,...content){
+    const uls = document.querySelectorAll("ul")[0]
+    // for(let newuls of uls){
+        uls.innerHTML += `<li>${content1}</li>`
+        uls.innerHTML += `<p>${content}</p>`
+    // }
+}
+newUlItems("new list", "new paragraph")
+
+// 40) Write a function to empty a list
+
+const emptyList = function(){
+    const delList = document.querySelectorAll("ul")
+    for(let allLists of delList){
+        allLists.remove()
+    }
+}
+emptyList()
+
+// EXTRA
+
+
+// 41) Add an eventListener to alert when the mouse is over a link, displaying the URL
+
+// 42) Add a button to hide every image on the page
+
+const buttonToHide = function(){
+    getButton = document.querySelector("#button1")
+    getImage = document.querySelector("#image")
+}
+
+// 43) Add a button to hide and show the table from the page
+
+
+// 44) Write a function to sum every number inside the TD (if the content is numeric)
+
+
+// 45) Delete the last letter from the title each time the user clicks on it
+
+// 46) Change a single TD background color when the user clicks on it
+
+// 47) Add a button DELETE, on click it should delete a random TD from the page
+
+// 48) Add a pink border to a cell when the mouse is over it
+
+// 49) Write a function to add a table with 4 rows and 3 columns programmatically
+
+// 50) Write a function to remove the table from the page
+
+    </script>
+</body>
+</html>
+

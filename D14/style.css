@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+.strive-bg{
+    /* rgba fourth channel gives you transparency */
+    background-color: rgba(15,23,30, 0.5);
+    /* 
+    background: linear-gradient(90deg);
+*/
+}
+
+/* gets direct children of navigation bar */
+nav > img{
+    width: 100px;
+}
+nav .dropdown-menu{
+    background-color: rgba(rgb(190, 29, 29), rgb(30, 214, 30), rgb(40, 40, 139), 0.5);
+    
+}
+.dropdown-item:hover,
+.dropdown-item:focus{
+    background-color: red;
+    color: wheat;
+}
+
+/* pseudo selector */
+.container-fluid h3::before{
+    content: "strive";
+    color: orange;
+}
